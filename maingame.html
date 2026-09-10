@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="GWorld.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="CustomElement.js"></script>
+    <script src="libraries/p5.min.js"></script>
+    <script src="Pong.js"></script>
+    <script src="gameManage.js"></script>
+</head>
+<body>
+    <my-header></my-header>
+    
+    <div id="mainContent">
+        <div id="gameNav">
+            <button onclick="gameTrigger('pong.js')">Pong</button>
+            <button onclick="gameTrigger('flapper.js')">Flappy</button>
+            <button onclick="gameTrigger('randomgame.js')">Game 3</button>
+        </div>
+
+        <div id="gamePanel"></div>
+
+        <my-opener></my-opener>
+    </div>
+
+    <my-footer></my-footer>
+
+    <script src="openerCheck.js"></script>
+</body>
+</html>
